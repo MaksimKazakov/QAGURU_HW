@@ -9,8 +9,8 @@ public class SearchTest {
 
     public void successfulSearchTest() {
         open("https://www.google.com");
-        $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://selenide.org"));
+        $("[name=q]").setValue("mail").pressEnter();
+        $("[id=search]").shouldHave(text("https://mail.ru"));
 
 
     }
